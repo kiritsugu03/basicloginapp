@@ -1,0 +1,33 @@
+{
+  "name": "loginapp",
+  "version": "1.0.0",
+  "description": "Basic login app",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "express-session": "^1.11.3",
+    "cookie-parser": "^1.3.5",
+    "jade": "^1.11.0",
+    "lodash": "^3.10.1",
+    "express-handlebars": "^2.0.1",
+    "bootstrap": "^3.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiritsugu03/basicloginapp.git"
+  },
+  "keywords": [
+    "login"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiritsugu03/basicloginapp/issues"
+  },
+  "homepage": "https://github.com/kiritsugu03/basicloginapp#readme"
+}
