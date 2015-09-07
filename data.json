@@ -1,22 +1,37 @@
 [
-  {
-    "username" : "cornellius",
-    "password" : "dagmang",
-    "name" : "cornellius dagmang"
-  },
-  {
-    "username" : "van",
-    "password" : "brigoli",
-    "name" : "giovanni brigoli"
-  },
-  {
-    "username" : "kevin",
-    "password" : "deguzman",
-    "name" : "kevin de guzman"
-  },
-  {
-    "username" : "dan",
-    "password" : "lalwet",
-    "name" : "dan lalwet"
-  }
+    {
+        "username": "cornellius",
+        "password": "dagmang",
+        "name": "cornellius dagmang"
+    },
+    {
+        "username": "van",
+        "password": "brigoli",
+        "name": "giovanni brigoli"
+    },
+    {
+        "username": "kevin",
+        "password": "deguzman",
+        "name": "kevin de guzman"
+    },
+    {
+        "username": "dan",
+        "password": "lalwet",
+        "name": "dan lalwet"
+    },
+    {
+        "username": "joey",
+        "password": "galang",
+        "name": "joey galang"
+    },
+    {
+        "username": "jas",
+        "password": "dulay",
+        "name": "jas dulay"
+    },
+    {
+        "username": "max",
+        "password": "dog",
+        "name": "max dog"
+    }
 ]

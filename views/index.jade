@@ -1,44 +1,26 @@
 doctype html
 html(lang="en")
-  head
-    title=pageTitle
-    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
-    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
-    
-  body
-    .container
-      h1 Login to your account
-      form(method="post" action="/login")
-        .form-group
-          label(for="username") Username
-          input.form-control(type="text", name="username", placeholder="Username", aria-describedby="basic-addon1", required)
-        .form-group
-          label(for="password") Password
-          input.form-control(type="password", name="password", placeholder="Password", aria-describedby="basic-addon1", required)
-        .form-group
-        input(type="submit", value="Login", class="btn btn-primary")
-        span Not yet a user? #[a(href="/register") Register]
-        
-      if errormsg 
-        span(class="alert alert-danger") #{errormsg}
-    //-   <form>
-    //-   <div class="form-group">
-    //-     <label for="exampleInputEmail1">Email address</label>
-    //-     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-    //-   </div>
-    //-   <div class="form-group">
-    //-     <label for="exampleInputPassword1">Password</label>
-    //-     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    //-   </div>
-    //-   <div class="form-group">
-    //-     <label for="exampleInputFile">File input</label>
-    //-     <input type="file" id="exampleInputFile">
-    //-     <p class="help-block">Example block-level help text here.</p>
-    //-   </div>
-    //-   <div class="checkbox">
-    //-     <label>
-    //-       <input type="checkbox"> Check me out
-    //-     </label>
-    //-   </div>
-    //-   <button type="submit" class="btn btn-default">Submit</button>
-    //- </form>
+    head
+      title=pageTitle
+      link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+      script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+      
+    body
+      .container
+        if user
+          h1 Login to your account #{user}
+        else
+          h1 Login to your account
+        form(method="post" action="/login")
+          .form-group
+            label(for="username") Username
+            input.form-control(type="text", name="username", placeholder="Username", aria-describedby="basic-addon1", required)
+          .form-group
+            label(for="password") Password
+            input.form-control(type="password", name="password", placeholder="Password", aria-describedby="basic-addon1", required)
+          .form-group
+            input(type="submit", value="Login", class="btn btn-primary")
+          span Not yet a user? #[a(href="/register") Register]
+          
+        if errormsg
+          span(class="alert alert-danger") #{errormsg}

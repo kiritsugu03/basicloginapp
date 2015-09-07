@@ -8,18 +8,19 @@ html(lang="en")
   body
     .container
       h1 Register Here
-      form(method="post" action="/register")
+      form(method="post" action="/registeruser")
+      
         .form-group
-          label(for="First Name") First Name
-          input.form-control(type="text", name="firstname", placeholder="Firstname", aria-describedby="basic-addon1", required)
-        .form-group
-          label(for="Last Name") Last Name
-          input.form-control(type="text", name="lastname", placeholder="Lastname", aria-describedby="basic-addon1", required)
+          label(for="Name") First Name
+          input.form-control(type="text", name="name", placeholder="Name", aria-describedby="basic-addon1", required)
+          
         .form-group
           label(for="username") Username
           input.form-control(type="text", name="username", placeholder="Username", aria-describedby="basic-addon1", required)
+        
         .form-group
           label(for="password") Password
           input.form-control(type="password", name="password", placeholder="Password", aria-describedby="basic-addon1", required)
+        
         .form-group
-        input(type="submit", value="Register", class="btn btn-success")
+          input(type="submit", value="Register", class="btn btn-success")
